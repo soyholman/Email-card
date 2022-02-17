@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,500;1,600&display=swap');
+$Color1:#f4fcfe;
+$Color2:#29262b;
+$Color3:#AC5FDB;
+$font:'poppins',sans-serif;
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+body{
+
+    font-family:$font;
+    height: 100vh;
+    width: 100%;
+    background: $Color1;
+
+
+   #c{
+    display: flex;
+       
+ 
+        align-items: center;
+        justify-content: center;
+   
+        animation: anim 3s ease-in-out;
+    
+        }
+
+        
+}
+
+@keyframes anim{
+    0%{
+
+transform: translateZ(-400px);
+opacity: 0;
+}
+
+100%{
+
+transform: translateX(0px);
+opacity: 1;
+}
+
+}
+.wrapper{
+   
+     background: #fff;
+    position: absolute;
+left: 50%;
+top:45%;
+
+    transform: translate(-50%, -50%);
+max-width: 400px;
+width: 100%;
+border-radius: 12px;
+text-align: center;
+box-shadow: 0 10px 10px rgba(0,0,0,0.23);
+
+.top{
+    height: 140px;
+    background: $Color3;
+    border-radius: 12px 12px 0 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top::before{
+  content: "";
+  position: absolute;
+    height: 20px;
+    width: 20px;
+   background: $Color3;
+bottom: -10px;
+transform: rotate(45deg);
+}
+.top i{
+font-size: 70px;
+color: $Color1;
+
+
+}
+
+.bottom{
+    padding:36px;
+}
+
+.bottom  .info{
+    font-size: 20px;
+    font-weight: 500;
+}
+.bottom .input-box{
+
+    width: 100%;
+    height: 45px;
+    margin: 15px 0 10px 0;
+}
+
+.bottom .input-box input{
+
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    border-radius: 15px;
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+.bottom input[type="text"]{
+
+padding-left: 20px;
+border:2px solid #ccc;    
+}
+
+.bottom input[type="submit"]{
+
+    border: none; 
+    background:$Color2;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    }
+    .bottom input[type="submit"]:focus, .bottom input[type="submit"]:valid{
+
+        border-color: #1414b8; 
+    }
+
+    .bottom input[type="submit"]:hover{
+
+        border-color: #1414b8; 
+
+    }
+
+    .bottom .footer{
+
+    font-size: 16px;
+    margin-top: 12px;
+    }
+
+}
